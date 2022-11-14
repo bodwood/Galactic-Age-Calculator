@@ -1,7 +1,8 @@
 export default class Person{
-  constructor(age, userLifeExpectancy){
+  constructor(age, sex, geographics){
     this.age = age;
-    this.userLifeExpectancy = userLifeExpectancy;
+    this.sex = sex;
+    this.geographics = geographics;
   }mercuryYears(){
     const mercuryAge = this.age / .241;
     return parseFloat(mercuryAge.toFixed(1));
@@ -15,6 +16,8 @@ export default class Person{
     const jupiterAge = this.age / 11.86;
     return parseFloat(jupiterAge.toFixed(2));
   }yearsLeft(){
-    return this.age;
+    if(this.sex === "male" && this.geographics === "US"){
+      return 73.2;
+    }
   }
 }
