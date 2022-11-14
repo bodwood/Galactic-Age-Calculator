@@ -24,6 +24,6 @@ describe('Person', () => {
 
   test('should return person age if jupiterYears function is called', () => {
     const person = new Person(25);
-    expect(person.jupiterYears()).toEqual(25);
+    expect(person.jupiterYears()).toEqual(2.11);
   });
 });
