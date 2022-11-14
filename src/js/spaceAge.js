@@ -5,6 +5,7 @@ export default class Person{
     const mercuryAge = this.age / .241;
     return parseFloat(mercuryAge.toFixed(1));
   }venusYears(){
-    return this.age;
+    const venusAge = this.age / .615;
+    return parseFloat(venusAge.toFixed(2));
   }
 }

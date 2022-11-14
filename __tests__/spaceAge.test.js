@@ -12,8 +12,8 @@ describe('Person', () => {
     expect(person.mercuryYears()).toEqual(103.7);
   });
 
-  test('should return person age when venusYears function is called', () => {
+  test('should return person age convert to venus years', () => {
     const person = new Person(25);
-    expect(person.venusYears()).toEqual(25);
-  })
+    expect(person.venusYears()).toEqual(40.65);
+  });
 });
