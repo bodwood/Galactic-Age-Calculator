@@ -10,5 +10,7 @@ export default class Person{
   }marsYears(){
     const marsAge = this.age / 1.88;
     return parseFloat(marsAge.toFixed(3));
+  }jupiterYears(){
+    return true;
   }
 }
