@@ -7,8 +7,8 @@ describe('Person', () => {
     expect(person.age).toEqual(25);
   });
 
-  test('should return true if mercuryYears function is called', () => {
+  test('should return the person objects age from mercuryYears', () => {
     const person = new Person(25);
-    expect(person.mercuryYears()).toEqual(true);
+    expect(person.mercuryYears()).toEqual(25);
   });
 });
