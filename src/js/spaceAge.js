@@ -18,6 +18,8 @@ export default class Person{
   }yearsLeft(){
     if(this.sex === "male" && this.geographics === "US"){
       return 73.2;
+    }else if(this.sex === "female" && this.geographics === "US"){
+      return 79.1;
     }
   }
 }
