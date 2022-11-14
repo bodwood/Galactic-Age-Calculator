@@ -25,10 +25,15 @@ export default class Person {
     const femaleLifeExpectancy = 79.1;
     const maleMercuryLifeLeft = maleLifeExpectancy - this.mercuryYears();
     const femaleMercuryLifeLeft = femaleLifeExpectancy - this.mercuryYears();
+    const maleVenusLifeLeft = maleLifeExpectancy - this.venusYears();
+    const femaleVenusLifeLeft = femaleLifeExpectancy - this.venusYears();
 
     if (this.sex === "male" && this.geographics === "US") {
-      if (maleMercuryLifeLeft < 0) {
-        return parseFloat(Math.abs(maleMercuryLifeLeft.toFixed(2)));
+      if (maleMercuryLifeLeft < 0 || maleVenusLifeLeft < 0) {
+
+        console.log(`Mercury years left: ${parseFloat(Math.abs(maleMercuryLifeLeft.toFixed(2)))}
+                Venus years left: ${parseFloat(Math.abs(maleVenusLifeLeft.toFixed(2)))}`);
+                return  `${parseFloat(Math.abs(maleMercuryLifeLeft.toFixed(2)))} and ${parseFloat(Math.abs(maleVenusLifeLeft.toFixed(2)))}`
         //person has lived 30.5 MERCURY YEARS past life expectancy
       } else {
         return parseFloat(maleMercuryLifeLeft.toFixed(2));
