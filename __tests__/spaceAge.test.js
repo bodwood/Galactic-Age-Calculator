@@ -22,8 +22,8 @@ describe('Person', () => {
     expect(person.marsYears()).toEqual(13.298);
   });
 
-  test('should return true if jupiterYears function is called', () => {
+  test('should return person age if jupiterYears function is called', () => {
     const person = new Person(25);
-    expect(person.jupiterYears()).toEqual(true);
+    expect(person.jupiterYears()).toEqual(25);
   });
 });
