@@ -16,4 +16,9 @@ describe('Person', () => {
     const person = new Person(25);
     expect(person.venusYears()).toEqual(40.65);
   });
+
+  test('should return age of person if marsYears function is called', () => {
+    const person = new Person(25);
+    expect(person.marsYears()).toEqual(13.298);
+  });
 });
