@@ -53,8 +53,6 @@ export default class Person {
     const femaleLifeExpectancy = 79.1;
     const maleVenusLifeLeft = maleLifeExpectancy - this.venusYears();
     const femaleVenusLifeLeft = femaleLifeExpectancy - this.venusYears();
-    // const maleMarsLifeLeft = maleLifeExpectancy - this.marsYears();
-    // const femaleMarsLifeLeft = femaleLifeExpectancy - this.marsYears();
 
     if (this.sex === "male" && this.geographics === "US") {
       if (maleVenusLifeLeft < 0) {
@@ -101,6 +99,35 @@ export default class Person {
       } else {
         console.log(`You have: ${parseFloat(femaleMarsLifeLeft.toFixed(2))} years left on Mars.`);
         return parseFloat(femaleMarsLifeLeft.toFixed(2));
+      }
+
+    } else {
+      return "please enter a valid age";
+    }
+  }yearsLeftJupiter() {
+    const maleLifeExpectancy = 73.2
+    const femaleLifeExpectancy = 79.1;
+    const maleJupiterLifeLeft = maleLifeExpectancy - this.jupiterYears();
+    const femaleJupiterLifeLeft = femaleLifeExpectancy - this.jupiterYears();
+
+
+    if (this.sex === "male" && this.geographics === "US") {
+      if (maleJupiterLifeLeft < 0) {
+        console.log(`You have lived ${parseFloat(Math.abs(maleJupiterLifeLeft.toFixed(2)))} years past life expectany for Venus!`);
+        return parseFloat(Math.abs(maleJupiterLifeLeft.toFixed(2)));
+
+      } else {
+        console.log(`You have: ${parseFloat(maleJupiterLifeLeft.toFixed(2))} years left on Venus.`);
+        return parseFloat(maleJupiterLifeLeft.toFixed(2));
+      }
+    } else if (this.sex === "female" && this.geographics === "US") {
+      if (femaleJupiterLifeLeft < 0) {
+        console.log(`You have lived ${parseFloat(Math.abs(femaleJupiterLifeLeft.toFixed(2)))} years past life expectany for Venus!`);
+        return parseFloat(Math.abs(femaleJupiterLifeLeft.toFixed(2)));
+
+      } else {
+        console.log(`You have: ${parseFloat(femaleJupiterLifeLeft.toFixed(2))} years left on Venus.`);
+        return parseFloat(femaleJupiterLifeLeft.toFixed(3));
       }
 
     } else {

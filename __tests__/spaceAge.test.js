@@ -27,6 +27,8 @@ describe('Person', () => {
     expect(person.jupiterYears()).toEqual(2.11);
   });
 
+  /*********Mercury yearsLeft Tests*********/
+
   test('should return amount of years on Mercury for a male (at birth) who lives in the US and is 25 years old', () => {
     const person = new Person(25, 'male', 'US');
     expect(person.yearsLeftMercury()).toEqual(30.5);
@@ -48,9 +50,11 @@ describe('Person', () => {
   });
 
   test('should return error message if entry is invalid', () => {
-    const person = new Person(1, 'greg', 'US');
+    const person = new Person(1, 'male', 'UK');
     expect(person.yearsLeftMercury()).toEqual("please enter a valid age");
   });
+
+  /*********Venus yearsLeft Tests*********/
 
   test('should return amount of years on Venus left for a male (at birth) who lives in the US and is 50 years old', () => {
     const person = new Person(50, 'male', 'US');
@@ -71,9 +75,13 @@ describe('Person', () => {
     const person = new Person(1, 'female', 'US');
     expect(person.yearsLeftVenus()).toEqual(77.47);
   });
-  
-//   //////////////////////////Venus test for a person who is 0 years old goes here
 
+  test('should return error message if entry is invalid', () => {
+    const person = new Person(1, 'male', 'UK');
+    expect(person.yearsLeftVenus()).toEqual("please enter a valid age");
+  });
+  
+/*********Mars yearsLeft Tests*********/
 
   test('should return amount of years on Mars left for a male (at birth) who lives in the US and is 155 years old', () => {
     const person = new Person(155, 'male', 'US');
@@ -95,5 +103,16 @@ describe('Person', () => {
     expect(person.yearsLeftMars()).toEqual(42.4);
   });
 
+  test('should return error message if entry is invalid', () => {
+    const person = new Person(1, 'male', 'UK');
+    expect(person.yearsLeftMars()).toEqual("please enter a valid age");
+  });
+
+/*********Jupiter yearsLeft Tests*********/
+
+test('should return amount of years on Jupiter left for a male (at birth) who lives in the US and is 900 years old', () => {
+  const person = new Person(900, 'male', 'US');
+  expect(person.yearsLeftJupiter()).toEqual(2.69);
+});
 
  });
