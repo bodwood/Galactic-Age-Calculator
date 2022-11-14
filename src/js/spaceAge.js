@@ -36,8 +36,9 @@ export default class Person {
     } else if (this.sex === "female" && this.geographics === "US") {
       if (femaleMercuryLifeLeft < 0) {
         return parseFloat(Math.abs(femaleMercuryLifeLeft.toFixed(2)));
+        //person has lived 24.5 MERCURY YEARS past life expectancy
       } else {
-        return parseFloat(femaleMercuryLifeLeft.toFixed(2));
+        return parseFloat(femaleMercuryLifeLeft.toFixed(3));
       }
 
     }
