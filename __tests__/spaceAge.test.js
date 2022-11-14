@@ -26,4 +26,9 @@ describe('Person', () => {
     const person = new Person(25);
     expect(person.jupiterYears()).toEqual(2.11);
   });
+
+  test('should return true if yearsLeft function is called', () => {
+    const person = new Person(25, 'United States');
+    expect(person.yearsLeft()).toEqual(true);
+  })
 });

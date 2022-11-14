@@ -1,6 +1,7 @@
 export default class Person{
-  constructor(age){
+  constructor(age, userLifeExpectancy){
     this.age = age;
+    this.userLifeExpectancy = userLifeExpectancy;
   }mercuryYears(){
     const mercuryAge = this.age / .241;
     return parseFloat(mercuryAge.toFixed(1));
@@ -13,5 +14,7 @@ export default class Person{
   }jupiterYears(){
     const jupiterAge = this.age / 11.86;
     return parseFloat(jupiterAge.toFixed(2));
+  }yearsLeft(){
+    return true;
   }
 }
