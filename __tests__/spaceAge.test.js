@@ -29,6 +29,6 @@ describe('Person', () => {
 
   test('should return true if yearsLeft function is called', () => {
     const person = new Person(25, 'United States');
-    expect(person.yearsLeft()).toEqual(true);
+    expect(person.yearsLeft()).toEqual(25);
   })
 });

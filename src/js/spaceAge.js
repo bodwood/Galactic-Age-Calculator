@@ -15,6 +15,6 @@ export default class Person{
     const jupiterAge = this.age / 11.86;
     return parseFloat(jupiterAge.toFixed(2));
   }yearsLeft(){
-    return true;
+    return this.age;
   }
 }
