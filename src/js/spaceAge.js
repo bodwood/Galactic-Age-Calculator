@@ -20,32 +20,37 @@ export default class Person {
     const jupiterAge = this.age / 11.86;
     return parseFloat(jupiterAge.toFixed(2));
   }
-  yearsLeft() {
+  yearsLeftMercury() {
     const maleLifeExpectancy = 73.2
     const femaleLifeExpectancy = 79.1;
     const maleMercuryLifeLeft = maleLifeExpectancy - this.mercuryYears();
     const femaleMercuryLifeLeft = femaleLifeExpectancy - this.mercuryYears();
-    const maleVenusLifeLeft = maleLifeExpectancy - this.venusYears();
-    const femaleVenusLifeLeft = femaleLifeExpectancy - this.venusYears();
+    // const maleVenusLifeLeft = maleLifeExpectancy - this.venusYears();
+    // const femaleVenusLifeLeft = femaleLifeExpectancy - this.venusYears();
+    // const maleMarsLifeLeft = maleLifeExpectancy - this.marsYears();
+    // const femaleMarsLifeLeft = femaleLifeExpectancy - this.marsYears();
 
     if (this.sex === "male" && this.geographics === "US") {
-      if (maleMercuryLifeLeft < 0 || maleVenusLifeLeft < 0) {
+      if (maleMercuryLifeLeft < 0) {
+        console.log(`You have lived ${parseFloat(Math.abs(maleMercuryLifeLeft.toFixed(2)))} years past life expectany for Mercury!`);
+        return parseFloat(Math.abs(maleMercuryLifeLeft.toFixed(2)));
 
-        console.log(`Mercury years left: ${parseFloat(Math.abs(maleMercuryLifeLeft.toFixed(2)))}
-                Venus years left: ${parseFloat(Math.abs(maleVenusLifeLeft.toFixed(2)))}`);
-                return  `${parseFloat(Math.abs(maleMercuryLifeLeft.toFixed(2)))} and ${parseFloat(Math.abs(maleVenusLifeLeft.toFixed(2)))}`
-        //person has lived 30.5 MERCURY YEARS past life expectancy
       } else {
+        console.log(`You have: ${parseFloat(maleMercuryLifeLeft.toFixed(2))} years left on Mercury.`);
         return parseFloat(maleMercuryLifeLeft.toFixed(2));
       }
     } else if (this.sex === "female" && this.geographics === "US") {
       if (femaleMercuryLifeLeft < 0) {
+        console.log(`You have lived ${parseFloat(Math.abs(femaleMercuryLifeLeft.toFixed(2)))} years past life expectany for Mercury!`);
         return parseFloat(Math.abs(femaleMercuryLifeLeft.toFixed(2)));
-        //person has lived 24.5 MERCURY YEARS past life expectancy
+
       } else {
+        console.log(`You have: ${parseFloat(femaleMercuryLifeLeft.toFixed(2))} years left on Mercury.`);
         return parseFloat(femaleMercuryLifeLeft.toFixed(3));
       }
 
+    } else {
+      return "please enter a valid age";
     }
   }
 }
