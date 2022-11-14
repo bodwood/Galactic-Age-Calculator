@@ -26,9 +26,6 @@ export default class Person {
     const maleMercuryLifeLeft = maleLifeExpectancy - this.mercuryYears();
     const femaleMercuryLifeLeft = femaleLifeExpectancy - this.mercuryYears();
 
-    // const maleMarsLifeLeft = maleLifeExpectancy - this.marsYears();
-    // const femaleMarsLifeLeft = femaleLifeExpectancy - this.marsYears();
-
     if (this.sex === "male" && this.geographics === "US") {
       if (maleMercuryLifeLeft < 0) {
         console.log(`You have lived ${parseFloat(Math.abs(maleMercuryLifeLeft.toFixed(2)))} years past life expectany for Mercury!`);
@@ -103,7 +100,7 @@ export default class Person {
 
       } else {
         console.log(`You have: ${parseFloat(femaleMarsLifeLeft.toFixed(2))} years left on Mars.`);
-        return parseFloat(femaleMarsLifeLeft.toFixed(3));
+        return parseFloat(femaleMarsLifeLeft.toFixed(2));
       }
 
     } else {

@@ -75,15 +75,25 @@ describe('Person', () => {
 //   //////////////////////////Venus test for a person who is 0 years old goes here
 
 
-//   test('should return amount of years on Mars left for a male (at birth) who lives in the US and is 25 years old', () => {
-//     const person = new Person(25, 'male', 'US');
-//     expect(person.yearsLeftMars()).toEqual(59.9);
-//   });
+  test('should return amount of years on Mars left for a male (at birth) who lives in the US and is 155 years old', () => {
+    const person = new Person(155, 'male', 'US');
+    expect(person.yearsLeftMars()).toEqual(9.25);
+  });
 
-//   test('should return amount of years on Mars left for a male (at birth) who lives in the US and is 1 years old', () => {
-//     const person = new Person(25, 'male', 'US');
-//     expect(person.yearsLeftMars()).toEqual(59.9);
-//   });
+  test('should return amount of years on Mars left for a male (at birth) who lives in the US and is 69 years old', () => {
+    const person = new Person(69, 'male', 'US');
+    expect(person.yearsLeftMars()).toEqual(36.5);
+  });
+
+  test('should return amount of years on Mars left for a female (at birth) who lives in the US and is 155 years old', () => {
+    const person = new Person(155, 'female', 'US');
+    expect(person.yearsLeftMars()).toEqual(3.35);
+  });
+
+  test('should return amount of years on Mars left for a female (at birth) who lives in the US and is 69 years old', () => {
+    const person = new Person(69, 'female', 'US');
+    expect(person.yearsLeftMars()).toEqual(42.4);
+  });
 
 
  });
