@@ -29,27 +29,32 @@ describe('Person', () => {
 
   test('should return amount of years on Mercury for a male (at birth) who lives in the US and is 25 years old', () => {
     const person = new Person(25, 'male', 'US');
-    expect(person.yearsLeft()).toEqual(30.5);
+    expect(person.yearsLeftMercury()).toEqual(30.5);
   });
 
   test('should return amount of years on Mercury for a female (at birth) who lives in the US and is 25 years old', () => {
     const person = new Person(25, 'female', 'US');
-    expect(person.yearsLeft()).toEqual(24.6);
+    expect(person.yearsLeftMercury()).toEqual(24.6);
   });
 
   test('should return amount of years on Mercury a male (at birth) who lives in the US and is 1 years old', () => {
     const person = new Person(1, 'male', 'US');
-    expect(person.yearsLeft()).toEqual(69.1);
+    expect(person.yearsLeftMercury()).toEqual(69.1);
   });
 
   test('should return amount of years on Mercury left for a female (at birth) who lives in the US and is 1 years old', () => {
     const person = new Person(1, 'female', 'US');
-    expect(person.yearsLeft()).toEqual(75);
+    expect(person.yearsLeftMercury()).toEqual(75);
   });
 
   test('should return error message if entry is invalid', () => {
     const person = new Person(1, 'greg', 'US');
-    expect(person.yearsLeft()).toEqual("please enter a valid age");
+    expect(person.yearsLeftMercury()).toEqual("please enter a valid age");
+  });
+
+  test('should return amount of years on Mercury left for a male (at birth) who lives in the US and is 25 years old', () => {
+    const person = new Person(25, 'male', 'US');
+    expect(person.yearsLeftVenus()).toEqual(32.55);
   });
 
 });
