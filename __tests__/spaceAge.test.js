@@ -9,6 +9,11 @@ describe('Person', () => {
 
   test('should return the person age converted to mercury years', () => {
     const person = new Person(25);
-    expect(person.mercuryYears()).toEqual(6);
+    expect(person.mercuryYears()).toEqual(103.7);
   });
+
+  test('should return person age when venusYears function is called', () => {
+    const person = new Person(25);
+    expect(person.venusYears()).toEqual(25);
+  })
 });
