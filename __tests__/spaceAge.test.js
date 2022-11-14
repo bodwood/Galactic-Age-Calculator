@@ -27,8 +27,8 @@ describe('Person', () => {
     expect(person.jupiterYears()).toEqual(2.11);
   });
 
-  test('should return life expectancy of a female (at birth) person in the united states', () => {
-    const person = new Person(25,'female', 'US');
-    expect(person.yearsLeft()).toEqual(79.1);
+  test('should return amount of years left for a male (at birth) who lives in the US', () => {
+    const person = new Person(25, 'male', 'US');
+    expect(person.yearsLeft()).toEqual(30.5);
   })
 });

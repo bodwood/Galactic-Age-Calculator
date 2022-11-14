@@ -17,9 +17,19 @@ export default class Person{
     return parseFloat(jupiterAge.toFixed(2));
   }yearsLeft(){
     if(this.sex === "male" && this.geographics === "US"){
-      return 73.2;
+      const maleLifeExpectancy = 73.2
+      const mercuryLifeLeft = maleLifeExpectancy - this.mercuryYears();
+      if(mercuryLifeLeft < 0){
+        return parseFloat(Math.abs(mercuryLifeLeft.toFixed(2)));
+        //person has lived 30.5 MERCURY YEARS past life expectancy
+      }      
     }else if(this.sex === "female" && this.geographics === "US"){
-      return 79.1;
+      const femaleLifeExpectancy = 79.1;
+      const mercuryLifeLeft = femaleLifeExpectancy - this.mercuryYears();
+      if(mercuryLifeLeft < 0){
+        return parseFloat(Math.abs(mercuryLifeLeft.toFixed(2)));
+      }
+      
     }
   }
 }
