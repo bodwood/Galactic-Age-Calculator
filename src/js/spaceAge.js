@@ -81,5 +81,33 @@ export default class Person {
     } else {
       return "please enter a valid age";
     }
+  }yearsLeftMars() {
+    const maleLifeExpectancy = 73.2
+    const femaleLifeExpectancy = 79.1;
+    const maleMarsLifeLeft = maleLifeExpectancy - this.marsYears();
+    const femaleMarsLifeLeft = femaleLifeExpectancy - this.marsYears();
+
+    if (this.sex === "male" && this.geographics === "US") {
+      if (maleMarsLifeLeft < 0) {
+        console.log(`You have lived ${parseFloat(Math.abs(maleMarsLifeLeft.toFixed(2)))} years past life expectany for Mars!`);
+        return parseFloat(Math.abs(maleMarsLifeLeft.toFixed(2)));
+
+      } else {
+        console.log(`You have: ${parseFloat(maleMarsLifeLeft.toFixed(2))} years left on Mars.`);
+        return parseFloat(maleMarsLifeLeft.toFixed(2));
+      }
+    } else if (this.sex === "female" && this.geographics === "US") {
+      if (femaleMarsLifeLeft < 0) {
+        console.log(`You have lived ${parseFloat(Math.abs(femaleMarsLifeLeft.toFixed(2)))} years past life expectany for Mars!`);
+        return parseFloat(Math.abs(femaleMarsLifeLeft.toFixed(2)));
+
+      } else {
+        console.log(`You have: ${parseFloat(femaleMarsLifeLeft.toFixed(2))} years left on Mars.`);
+        return parseFloat(femaleMarsLifeLeft.toFixed(3));
+      }
+
+    } else {
+      return "please enter a valid age";
+    }
   }
 }

@@ -52,9 +52,33 @@ describe('Person', () => {
     expect(person.yearsLeftMercury()).toEqual("please enter a valid age");
   });
 
-  test('should return amount of years on Mercury left for a male (at birth) who lives in the US and is 25 years old', () => {
+  test('should return amount of years on Venus left for a male (at birth) who lives in the US and is 25 years old', () => {
     const person = new Person(25, 'male', 'US');
     expect(person.yearsLeftVenus()).toEqual(32.55);
   });
+
+  test('should return amount of years on Venus left for a male (at birth) who lives in the US and is 1 years old', () => {
+    const person = new Person(1, 'male', 'US');
+    expect(person.yearsLeftVenus()).toEqual(71.57);
+  });
+
+  test('should return amount of years on Venus left for a female (at birth) who lives in the US and is 25 years old', () => {
+    const person = new Person(25, 'female', 'US');
+    expect(person.yearsLeftVenus()).toEqual(38.45);
+  });
+
+  test('should return amount of years on Venus left for a female (at birth) who lives in the US and is 1 years old', () => {
+    const person = new Person(1, 'female', 'US');
+    expect(person.yearsLeftVenus()).toEqual(77.47);
+  });
+  
+  //////////////////////////Venus test for a person who is 0 years old goes here
+
+
+  test('should return amount of years on Mars left for a male (at birth) who lives in the US and is 25 years old', () => {
+    const person = new Person(25, 'male', 'US');
+    expect(person.yearsLeftMars()).toEqual(59.9);
+  });
+
 
 });
