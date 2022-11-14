@@ -8,8 +8,8 @@ describe('Person', () => {
   });
 
   test('should return the person age converted to mercury years', () => {
-    const person = new Person(25);
-    expect(person.mercuryYears()).toEqual(103.7);
+    const person = new Person(1);
+    expect(person.mercuryYears()).toEqual(4.1);
   });
 
   test('should return person age convert to venus years', () => {
@@ -27,8 +27,13 @@ describe('Person', () => {
     expect(person.jupiterYears()).toEqual(2.11);
   });
 
-  test('should return amount of years left for a male (at birth) who lives in the US', () => {
-    const person = new Person(25, 'male', 'US');
-    expect(person.yearsLeft()).toEqual(30.5);
-  })
+  test('should return amount of years on Mercury left for a female (at birth) who lives in the US', () => {
+    const person = new Person(1, 'male', 'US');
+    expect(person.yearsLeft()).toEqual(69.1);
+  });
+
+  // test('should return true if calculating venus life left', () => {
+  //   const person = new Person(25, 'female', 'US');
+  //   expect(person.yearsLeft()).toEqual(true);
+  // });
 });
