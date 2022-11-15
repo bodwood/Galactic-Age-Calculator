@@ -48,7 +48,8 @@ export default class Person {
     } else {
       return "please enter a valid age";
     }
-  }yearsLeftVenus() {
+  }
+  yearsLeftVenus() {
     const maleLifeExpectancy = 73.2
     const femaleLifeExpectancy = 79.1;
     const maleVenusLifeLeft = maleLifeExpectancy - this.venusYears();
@@ -76,7 +77,8 @@ export default class Person {
     } else {
       return "please enter a valid age";
     }
-  }yearsLeftMars() {
+  }
+  yearsLeftMars() {
     const maleLifeExpectancy = 73.2
     const femaleLifeExpectancy = 79.1;
     const maleMarsLifeLeft = maleLifeExpectancy - this.marsYears();
@@ -104,12 +106,12 @@ export default class Person {
     } else {
       return "please enter a valid age";
     }
-  }yearsLeftJupiter() {
+  }
+  yearsLeftJupiter() {
     const maleLifeExpectancy = 73.2
     const femaleLifeExpectancy = 79.1;
     const maleJupiterLifeLeft = maleLifeExpectancy - this.jupiterYears();
     const femaleJupiterLifeLeft = femaleLifeExpectancy - this.jupiterYears();
-
 
     if (this.sex === "male" && this.geographics === "US") {
       if (maleJupiterLifeLeft < 0) {

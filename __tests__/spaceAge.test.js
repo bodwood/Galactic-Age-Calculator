@@ -80,8 +80,8 @@ describe('Person', () => {
     const person = new Person(1, 'male', 'UK');
     expect(person.yearsLeftVenus()).toEqual("please enter a valid age");
   });
-  
-/*********Mars yearsLeft Tests*********/
+
+  /*********Mars yearsLeft Tests*********/
 
   test('should return amount of years on Mars left for a male (at birth) who lives in the US and is 155 years old', () => {
     const person = new Person(155, 'male', 'US');
@@ -108,31 +108,31 @@ describe('Person', () => {
     expect(person.yearsLeftMars()).toEqual("please enter a valid age");
   });
 
-/*********Jupiter yearsLeft Tests*********/
+  /*********Jupiter yearsLeft Tests*********/
 
-test('should return amount of years on Jupiter left for a male (at birth) who lives in the US and is 900 years old', () => {
-  const person = new Person(900, 'male', 'US');
-  expect(person.yearsLeftJupiter()).toEqual(2.69);
-});
+  test('should return amount of years on Jupiter left for a male (at birth) who lives in the US and is 900 years old', () => {
+    const person = new Person(900, 'male', 'US');
+    expect(person.yearsLeftJupiter()).toEqual(2.69);
+  });
 
-test('should return amount of years on Jupiter left for a male (at birth) who lives in the US and is 27 years old', () => {
-  const person = new Person(27, 'male', 'US');
-  expect(person.yearsLeftJupiter()).toEqual(70.92);
-});
+  test('should return amount of years on Jupiter left for a male (at birth) who lives in the US and is 27 years old', () => {
+    const person = new Person(27, 'male', 'US');
+    expect(person.yearsLeftJupiter()).toEqual(70.92);
+  });
 
-test('should return amount of years on Jupiter left for a female (at birth) who lives in the US and is 950 years old', () => {
-  const person = new Person(950, 'female', 'US');
-  expect(person.yearsLeftJupiter()).toEqual(1);
-});
+  test('should return amount of years on Jupiter left for a female (at birth) who lives in the US and is 950 years old', () => {
+    const person = new Person(950, 'female', 'US');
+    expect(person.yearsLeftJupiter()).toEqual(1);
+  });
 
-test('should return amount of years on Jupiter left for a female (at birth) who lives in the US and is 27 years old', () => {
-  const person = new Person(27, 'female', 'US');
-  expect(person.yearsLeftJupiter()).toEqual(76.82);
-});
+  test('should return amount of years on Jupiter left for a female (at birth) who lives in the US and is 27 years old', () => {
+    const person = new Person(27, 'female', 'US');
+    expect(person.yearsLeftJupiter()).toEqual(76.82);
+  });
 
-test('should return error message if entry is invalid', () => {
-  const person = new Person(1, 'male', 'UK');
-  expect(person.yearsLeftJupiter()).toEqual("please enter a valid age");
-});
+  test('should return error message if entry is invalid', () => {
+    const person = new Person(1, 'male', 'UK');
+    expect(person.yearsLeftJupiter()).toEqual("please enter a valid age");
+  });
 
 });

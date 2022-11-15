@@ -1,46 +1,55 @@
-# Template Repo
+# Galactic Age Calculator
 
-#### This repo is meant to be used as a template for further applications at Epicodus
+#### By _**Bodie Wood**_
 
-#### By Bodie Wood
+#### _A simple project that calculates a users age if they were to be on Mercury, Venus, Mars, Jupiter._
+#### _Life expectancy is calculated for each planet_
+
+---
+
+## Link
+
+_https://github.com/bodwood/Pizza-Parlor_
+
+## Github Site
+
+_https://bodwood.github.io/Pizza-Parlor/_
+
+---
 
 ## Technologies Used
 
 * HTML
 * CSS
 * JavaScript
+* Jest 
+* Webpack
+* Babel
+* Es Lint
 
 ## Description
-_Template used for further projects at Epicodus_
+
+_This project allows users to view their age as if they were living on a different planet._
+
+_Planets include Mercury, Venus, Mars, Jupiter._
+
+_Life expectancy will be displayed to the user depending on which planet they choose._
 
 ## Setup/Installation Requirements
 
-* _Clone project to machine_
+* _Clone this repository to your desktop._
+* _Navigate to the most top directory._
+* _Open terminal at root directory and do the following:_
 * _Run: ```npm install```_
 * _Run: ```npm run build```_
-* _Run: ```npm install jest@24.9.0 --save-dev```_
-* _Run: ```npm install @babel/core@7.18.6 --save-dev```_
-* _Run: ```npm install @babel/plugin-transform-modules-commonjs@7.18.6 --save-dev```_
+* _Run: ```npm run start```_
+* _Run:  ```npm run test```_
 
-_if any packages aren't working, run the corresponding package install below_
+## Known Bugs
 
-* _Run: ```npm install webpack@4.46.0 --save-dev --save-exact```_
-* _Run: ```npm install webpack-cli@3.3.12 --save-dev```_
-* _Run: ```npm install style-loader@1.3.0```_
-* _Run: ```npm install css-loader@3.6.0 --save-dev```_
-* _Run: ```npm install html-webpack-plugin@4.5.2 --save-dev```_
-* _Run: ```npm install clean-webpack-plugin@3.0.0 --save-dev```_
-* _Run: ```npm install webpack-dev-server@3.11.3 --save-dev --save-exact```_
-* _Run: ```npm install eslint@8.18.0 --save-dev```_
-* _Run: ```npm install eslint-webpack-plugin@2.7.0 --save-dev```_
-
-_if images are needed install the following_
-
-* _Run: ```npm install file-loader --save-dev```_
-* _Run: ```npm install html-loader@1.3.2 --save-dev```_
-
-
-
+* _No known bugs_
 
 ## License
- _MIT_
+_[MIT](https://en.wikipedia.org/wiki/MIT_License)_ 
+
+Copyright (c) _2022_ _Bodie Wood_
