@@ -115,4 +115,9 @@ test('should return amount of years on Jupiter left for a male (at birth) who li
   expect(person.yearsLeftJupiter()).toEqual(2.69);
 });
 
+test('should return amount of years on Mars left for a male (at birth) who lives in the US and is 27 years old', () => {
+  const person = new Person(27, 'male', 'US');
+  expect(person.yearsLeftJupiter()).toEqual(70.92);
+});
+
  });

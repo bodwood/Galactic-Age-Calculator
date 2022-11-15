@@ -113,20 +113,20 @@ export default class Person {
 
     if (this.sex === "male" && this.geographics === "US") {
       if (maleJupiterLifeLeft < 0) {
-        console.log(`You have lived ${parseFloat(Math.abs(maleJupiterLifeLeft.toFixed(2)))} years past life expectany for Venus!`);
+        console.log(`You have lived ${parseFloat(Math.abs(maleJupiterLifeLeft.toFixed(2)))} years past life expectany for Jupiter!`);
         return parseFloat(Math.abs(maleJupiterLifeLeft.toFixed(2)));
 
       } else {
-        console.log(`You have: ${parseFloat(maleJupiterLifeLeft.toFixed(2))} years left on Venus.`);
+        console.log(`You have: ${parseFloat(maleJupiterLifeLeft.toFixed(2))} years left on Jupiter.`);
         return parseFloat(maleJupiterLifeLeft.toFixed(2));
       }
     } else if (this.sex === "female" && this.geographics === "US") {
       if (femaleJupiterLifeLeft < 0) {
-        console.log(`You have lived ${parseFloat(Math.abs(femaleJupiterLifeLeft.toFixed(2)))} years past life expectany for Venus!`);
+        console.log(`You have lived ${parseFloat(Math.abs(femaleJupiterLifeLeft.toFixed(2)))} years past life expectany for Jupiter!`);
         return parseFloat(Math.abs(femaleJupiterLifeLeft.toFixed(2)));
 
       } else {
-        console.log(`You have: ${parseFloat(femaleJupiterLifeLeft.toFixed(2))} years left on Venus.`);
+        console.log(`You have: ${parseFloat(femaleJupiterLifeLeft.toFixed(2))} years left on Jupiter.`);
         return parseFloat(femaleJupiterLifeLeft.toFixed(3));
       }
 
