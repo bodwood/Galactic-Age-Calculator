@@ -7,13 +7,9 @@
 
 ---
 
-## Link
-
-_https://github.com/bodwood/Pizza-Parlor_
-
 ## Github Site
 
-_https://bodwood.github.io/Pizza-Parlor/_
+_https://github.com/bodwood/Galactic-Age-Calculator/_
 
 ---
 
@@ -25,7 +21,7 @@ _https://bodwood.github.io/Pizza-Parlor/_
 * Jest 
 * Webpack
 * Babel
-* Es Lint
+* ES Lint
 
 ## Description
 
